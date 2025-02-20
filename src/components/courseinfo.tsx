@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store/store';
-import { enrollCourse } from '../store/userSlice';
+import { enrollCourse } from '../store/user';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const CourseDetails = () => {

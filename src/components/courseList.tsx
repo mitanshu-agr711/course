@@ -1,9 +1,9 @@
-import React from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import { RootState } from '../store/store';
-import { setSearchQuery } from '../store/coursesSlice';
+import { setSearchQuery } from '../store/course';
 
 const CourseList = () => {
   const dispatch = useDispatch();

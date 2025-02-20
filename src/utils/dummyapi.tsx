@@ -86,12 +86,4 @@ const DUMMY_COURSES: Course[] = [
    
   ];
   
-  export const getCourses = async (): Promise<Course[]> => {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return DUMMY_COURSES;
-  };
-  
-  export const getCourseById = async (id: number): Promise<Course | undefined> => {
-    await new Promise(resolve => setTimeout(resolve, 500));
-    return DUMMY_COURSES.find(course => course.id === id);
-  };
+export default DUMMY_COURSES;

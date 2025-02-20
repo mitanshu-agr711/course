@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RootState } from '../store/store';
-import { markAsCompleted, updateProgress } from '../store/userSlice';
+import { markAsCompleted, updateProgress } from '../store/user';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -56,7 +56,9 @@ const Dashboard = () => {
                   </div>
                 </div>
                 {!course.completed && (
+                  <label htmlFor={`progress-${course.id}`} className="sr-only">Course Progress</label>
                   <input
+                    id={`progress-${course.id}`}
                     type="range"
                     min="0"
                     max="100"
@@ -66,6 +68,7 @@ const Dashboard = () => {
                       progress: parseInt(e.target.value)
                     }))}
                     className="mt-4 w-full"
+                    title="Course Progress"
                   />
                 )}
                 {course.completed && (
