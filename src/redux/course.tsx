@@ -1,6 +1,26 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { getCourses, getCourseById } from '../utils/dummyapi';
-import { Course } from '../types';
+import { getCourses } from '../utils/dummyapi';
+
+
+interface Course {
+  id: number;
+  name: string;
+  instructor: string;
+  description: string;
+  enrollmentStatus: 'Open' | 'Closed' | 'In Progress';
+  thumbnail: string;
+  duration: string;
+  schedule: string;
+  location: string;
+  prerequisites: string[];
+  syllabus: SyllabusItem[];
+}
+interface SyllabusItem {
+  week: number;
+  topic: string;
+  content: string;
+}
+
 
 interface CourseState {
   courses: Course[];
