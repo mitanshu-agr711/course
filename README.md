@@ -62,6 +62,3 @@ Feel free to open issues and contribute! Fork the repository and submit a PR.
 
 ## 📄 License
 This project is open-source and available under the [MIT License](LICENSE).
-
----
-🚀 Happy Coding! 🎉
