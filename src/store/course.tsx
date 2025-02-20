@@ -1,7 +1,6 @@
 import { createSlice,  PayloadAction } from '@reduxjs/toolkit';
 import initialCourses from '../utils/dummyapi';
-
-import { Course } from '../types/courses';
+// import { Course } from '../types/courses';
 
 const coursesSlice = createSlice({
   name: 'courses',

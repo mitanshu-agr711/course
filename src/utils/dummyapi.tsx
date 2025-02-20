@@ -10,6 +10,7 @@ interface Course {
     location: string;
     prerequisites: string[];
     syllabus: SyllabusItem[];
+    likes?: number;
   }
   interface SyllabusItem {
     week: number;
@@ -34,7 +35,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Introduction to React Native', content: 'Overview of React Native, setting up environment' },
             { week: 2, topic: 'Components and Props', content: 'Understanding basic components and props' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 2,
@@ -50,7 +52,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Introduction to JavaScript', content: 'Overview of JavaScript, setting up environment, and basic syntax' },
             { week: 2, topic: 'Variables and Data Types', content: 'Understanding variables, constants, and different data types in JavaScript' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 3,
@@ -66,7 +69,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Introduction to Python', content: 'Setting up Python, basic syntax' },
             { week: 2, topic: 'Data Structures', content: 'Lists, Tuples, Dictionaries, and Sets' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 4,
@@ -82,7 +86,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'HTML & CSS Basics', content: 'Introduction to web development' },
             { week: 2, topic: 'JavaScript Fundamentals', content: 'DOM manipulation, events' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 5,
@@ -98,7 +103,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Data Analysis', content: 'Pandas, NumPy' },
             { week: 2, topic: 'Data Visualization', content: 'Matplotlib, Seaborn' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 6,
@@ -114,7 +120,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Supervised Learning', content: 'Regression, Classification' },
             { week: 2, topic: 'Unsupervised Learning', content: 'Clustering, Dimensionality Reduction' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 7,
@@ -130,7 +137,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Introduction to Cybersecurity', content: 'Cyber threats, security principles' },
             { week: 2, topic: 'Network Security', content: 'Firewalls, encryption, penetration testing' }
-        ]
+        ], 
+        likes: 0 
     },
     {
         id: 8,
@@ -146,7 +154,8 @@ interface Course {
         syllabus: [
             { week: 1, topic: 'Introduction to AWS', content: 'AWS services, IAM, S3, EC2' },
             { week: 2, topic: 'Serverless Computing', content: 'AWS Lambda, API Gateway' }
-        ]
+        ], 
+        likes: 0 
     },
     {
       id: 9,
@@ -162,7 +171,8 @@ interface Course {
       syllabus: [
           { week: 1, topic: 'Introduction to Blockchain', content: 'History, fundamentals, and use cases' },
           { week: 2, topic: 'Cryptography Basics', content: 'Encryption, hashing, and digital signatures' }
-      ]
+      ], 
+      likes: 0 
   },
   {
       id: 10,
@@ -178,7 +188,8 @@ interface Course {
       syllabus: [
           { week: 1, topic: 'Introduction to UX/UI', content: 'Understanding user needs and usability principles' },
           { week: 2, topic: 'Wireframing and Prototyping', content: 'Creating low-fidelity and high-fidelity prototypes' }
-      ]
+      ], 
+      likes: 0 
   },
   {
       id: 11,
@@ -194,7 +205,8 @@ interface Course {
       syllabus: [
           { week: 1, topic: 'Introduction to AI', content: 'AI history, applications, and impact' },
           { week: 2, topic: 'Machine Learning Basics', content: 'Supervised and unsupervised learning' }
-      ]
+      ], 
+      likes: 0 
   },
   {
       id: 12,
@@ -210,7 +222,8 @@ interface Course {
       syllabus: [
           { week: 1, topic: 'Introduction to DevOps', content: 'Understanding DevOps culture and practices' },
           { week: 2, topic: 'CI/CD Pipelines', content: 'Implementing continuous integration and continuous deployment' }
-      ]
+      ], 
+      likes: 0 
   },
   {
       id: 13,
@@ -226,7 +239,8 @@ interface Course {
       syllabus: [
           { week: 1, topic: 'Getting Started with Unity', content: 'Setting up Unity, understanding the interface' },
           { week: 2, topic: 'Scripting with C#', content: 'Writing scripts for game mechanics' }
-      ]
+      ], 
+      likes: 0 
   }
 ];
 
