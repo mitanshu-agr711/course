@@ -56,9 +56,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 {!course.completed && (
-                  <label htmlFor={`progress-${course.id}`} className="sr-only">Course Progress</label>
                   <input
-                    id={`progress-${course.id}`}
                     type="range"
                     min="0"
                     max="100"
@@ -68,7 +66,6 @@ const Dashboard = () => {
                       progress: parseInt(e.target.value)
                     }))}
                     className="mt-4 w-full"
-                    title="Course Progress"
                   />
                 )}
                 {course.completed && (
